@@ -1,17 +1,14 @@
 {
   "name": "@origam/plugin-interfaces",
   "main": "dist/index.js",
-  "version": "0.0.1",
-  "repository": "git://github.com/origam/plugin-interfaces.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "version": "0.0.2",
   "files": [
     "dist",
     "src/styles/*.scss",
     "src/components/Dropdown/Dropdown.module.scss"
   ],
   "devDependencies": {
+    "@types/react": "^17.0.34",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "postcss": "^8.3.11",
@@ -21,7 +18,6 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.4.4"
   },
-  "peerDependencies": {},
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
