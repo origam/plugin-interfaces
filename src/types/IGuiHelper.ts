@@ -17,15 +17,12 @@ You should have received a copy of the GNU General Public License
 along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
-export { IPlugin } from './types/IPlugin';
-export { IPluginData } from './types/IPluginData';
-export { IPluginDataView } from './types/IPluginDataView';
-export { IPluginProperty } from './types/IPluginProperty';
-export { IPluginTableRow } from './types/IPluginTableRow';
-export { IScreenPlugin } from './types/IScreenPlugin';
-export { isIScreenPlugin } from './types/IScreenPlugin';
-export { ISectionPlugin } from './types/ISectionPlugin';
-export { isISectionPlugin } from './types/ISectionPlugin';
-export { ILocalizer } from './types/ILocalizer';
-export { ILocalization } from './types/ILocalization';
-export { IGuiHelper } from "./types/IGuiHelper"
+export interface IGuiHelper {
+  askYesNoQuestion(title: string, question: string): Promise<boolean>;
+
+  wrapInFlowWithHandler(action: (() => Promise<any>) | (() => void)): () => Promise<void>;
+
+  runInFlowWithHandler(action: (() => Promise<any>) | (() => void)): Promise<void>;
+
+  runGeneratorInFlowWithHandler(generator: Generator): Promise<void>;
+}
