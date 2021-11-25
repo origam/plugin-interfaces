@@ -32,5 +32,5 @@ export interface IPluginDataView {
 
   saveConfiguration(pluginName: string, configuration: string): Promise<void>;
 
-  getConfiguration(pluginName: string): string
+  getConfiguration(pluginName: string): string | undefined;
 }
