@@ -29,3 +29,4 @@ export { isISectionPlugin } from './types/ISectionPlugin';
 export { ILocalizer } from './types/ILocalizer';
 export { ILocalization } from './types/ILocalization';
 export { IGuiHelper } from "./types/IGuiHelper"
+export { DataType } from "./types/DataType"
