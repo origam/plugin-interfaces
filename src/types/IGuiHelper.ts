@@ -25,4 +25,9 @@ export interface IGuiHelper {
   runInFlowWithHandler(action: (() => Promise<any>) | (() => void)): Promise<void>;
 
   runGeneratorInFlowWithHandler(generator: Generator): Promise<void>;
+
+  openMenuItem(args: {
+    itemId: any;
+    idParameter?: string;
+  }): Promise<void>
 }
