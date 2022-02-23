@@ -17,6 +17,9 @@ You should have received a copy of the GNU General Public License
 along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
+import { ReactElement } from "react";
+import { IOption } from "src/types/IOption";
+
 export interface IGuiHelper {
   askYesNoQuestion(title: string, question: string): Promise<boolean>;
 
@@ -30,4 +33,15 @@ export interface IGuiHelper {
     itemId: any;
     idParameter?: string;
   }): Promise<void>
+
+
+  // Will render a dropdown component optimized for desktop or mobile based on window size
+  renderDropDown<T>(args: {
+      options: IOption<T>[],
+      selectedOption: IOption<T>,
+      onOptionClick: (option: IOption<T>) => void,
+      width?: string,
+      className?: string
+    }
+  ): ReactElement;
 }
