@@ -18,9 +18,13 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { IPlugin } from "./IPlugin";
+import { ILocalization } from "./ILocalization";
+import { ILocalizer } from "./ILocalizer";
+import { ISectionPluginData } from "./ISectionPluginData";
 
 export interface ISectionPlugin extends IPlugin {
   getScreenParameters: (() => { [key: string]: string }) | undefined;
+  getComponent(data: ISectionPluginData, createLocalizer: (localizations: ILocalization[]) => ILocalizer): JSX.Element;
 }
 
 export const isISectionPlugin = (o: any): o is ISectionPlugin => o?.$type_ISectionPlugin;

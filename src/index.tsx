@@ -18,7 +18,8 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
 export { IPlugin } from './types/IPlugin';
-export { IPluginData } from './types/IPluginData';
+export { IScreenPluginData } from './types/IScreenPluginData';
+export { ISectionPluginData } from './types/ISectionPluginData';
 export { IPluginDataView } from './types/IPluginDataView';
 export { IPluginProperty } from './types/IPluginProperty';
 export { IPluginTableRow } from './types/IPluginTableRow';

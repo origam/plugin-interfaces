@@ -20,7 +20,7 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 import { IPluginDataView } from "./IPluginDataView";
 import { IGuiHelper } from "./IGuiHelper";
 
-export interface IPluginData {
+export interface ISectionPluginData {
   dataView: IPluginDataView,
   guiHelper: IGuiHelper;
 }

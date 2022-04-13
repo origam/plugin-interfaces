@@ -17,21 +17,10 @@ You should have received a copy of the GNU General Public License
 along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { IPluginTableRow } from "./IPluginTableRow";
-import { IPluginProperty } from "./IPluginProperty";
+import { IPluginDataView } from "./IPluginDataView";
+import { IGuiHelper } from "./IGuiHelper";
 
-export interface IPluginDataView {
-  tableRows: IPluginTableRow[];
-  properties: IPluginProperty[];
-  entity: string;
-
-  getCellText(row: any, propertyId: string): any;
-
-  getCellValue(row: any, propertyId: string): any;
-
-  getRowId(row: IPluginTableRow): string;
-
-  saveConfiguration(pluginName: string, configuration: string): Promise<void>;
-
-  getConfiguration(pluginName: string): string | undefined;
+export interface IScreenPluginData {
+  dataViews: IPluginDataView[],
+  guiHelper: IGuiHelper;
 }

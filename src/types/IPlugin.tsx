@@ -17,15 +17,9 @@ You should have received a copy of the GNU General Public License
 along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { IPluginData } from "./IPluginData";
-import { ILocalization } from "./ILocalization";
-import { ILocalizer } from "./ILocalizer";
 
 export interface IPlugin {
   initialize(xmlAttributes: { [key: string]: string }): void;
-
-  getComponent(data: IPluginData, createLocalizer: (localizations: ILocalization[]) => ILocalizer): JSX.Element;
-
   id: string;
 }
 
