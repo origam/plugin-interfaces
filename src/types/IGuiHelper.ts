@@ -29,6 +29,8 @@ export interface IGuiHelper {
 
   runGeneratorInFlowWithHandler(generator: Generator): Promise<void>;
 
+  isMobileLayoutActive(): boolean;
+
   openMenuItem(args: {
     itemId: any;
     idParameter?: string;
