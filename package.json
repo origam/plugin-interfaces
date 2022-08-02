@@ -10,7 +10,7 @@
     "src/components/Dropdown/Dropdown.module.scss"
   ],
   "devDependencies": {
-    "@types/react": "^17.0.34",
+    "@types/react": "^18.0.15",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "postcss": "^8.4.5",
