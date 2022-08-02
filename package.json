@@ -22,5 +22,9 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
+  },
+  "dependencies": {
+    "@origam/utils": "^1.1.1",
+    "mobx": "5"
   }
 }
