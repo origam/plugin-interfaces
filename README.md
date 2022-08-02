@@ -1,1 +1,1 @@
-Contains basic interfaces for creating Origam plugins.
+Contains basic interfaces and abstract classes for creating Origam plugins.
