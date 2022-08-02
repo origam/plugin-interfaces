@@ -1,5 +1,5 @@
 {
-  "name": "@origam/plugin-interfaces",
+  "name": "@origam/plugins",
   "main": "dist/index.js",
   "version": "3.0.0",
   "license": "GPL-3.0",
