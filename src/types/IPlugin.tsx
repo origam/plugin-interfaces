@@ -20,6 +20,7 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 
 export interface IPlugin {
   initialize(xmlAttributes: { [key: string]: string }): void;
+  onSessionRefreshed(): void;
   id: string;
 }
 

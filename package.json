@@ -1,7 +1,8 @@
 {
-  "name": "@origam/plugin-interfaces",
+  "name": "@origam/plugins",
   "main": "dist/index.js",
-  "version": "2.1.0",
+  "repository": "https://github.com/origam/js-plugins.git",
+  "version": "1.0.0",
   "license": "GPL-3.0",
   "files": [
     "dist",
@@ -22,5 +23,9 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
+  },
+  "dependencies": {
+    "@origam/utils": "^1.1.1",
+    "mobx": "5"
   }
 }
