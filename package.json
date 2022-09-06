@@ -1,6 +1,7 @@
 {
   "name": "@origam/plugins",
   "main": "dist/index.js",
+  "repository": "https://github.com/origam/js-plugins.git",
   "version": "1.1.0",
   "license": "GPL-3.0",
   "files": [
