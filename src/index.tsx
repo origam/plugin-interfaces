@@ -32,3 +32,5 @@ export { ILocalization } from './types/ILocalization';
 export { IGuiHelper } from "./types/IGuiHelper"
 export { DataType } from "./types/DataType"
 export { IOption } from "./types/IOption"
+export { AbstractScreenPlugin } from "./implementations/AbstractScreenPlugin"
+export { AbstractSectionPlugin } from "./implementations/AbstractSectionPlugin"

@@ -19,13 +19,13 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 
 import { observable } from "mobx";
 import { EventHandler } from "@origam/utils";
-import { IScreenPlugin } from "../types/IScreenPlugin";
-import { IScreenPluginData } from "../types/IScreenPluginData";
+import { ISectionPlugin } from "../types/ISectionPlugin";
+import { ISectionPluginData } from "../types/ISectionPluginData";
 import { ILocalization } from "../types/ILocalization";
 import { ILocalizer } from "../types/ILocalizer";
 
-export abstract class AbstractScreenPlugin implements IScreenPlugin {
-  $type_IScreenPlugin: 1 = 1; // required by the isIScreenPlugin function
+export abstract class AbstractSectionPlugin implements ISectionPlugin {
+  $type_ISectionPlugin: 1 = 1; // required by the isISectionPlugin function
   id: string = ""
 
   @observable
@@ -33,11 +33,7 @@ export abstract class AbstractScreenPlugin implements IScreenPlugin {
 
   refreshHandler = new EventHandler();
 
-  requestSessionRefresh: (() => Promise<any>) | undefined;
-
-  setScreenParameters: ((parameters: { [p: string]: string }) => void) | undefined;
-
-  abstract getComponent(data: IScreenPluginData, createLocalizer: (localizations: ILocalization[]) => ILocalizer): JSX.Element
+  abstract getComponent(data: ISectionPluginData, createLocalizer: (localizations: ILocalization[]) => ILocalizer): JSX.Element
 
   onSessionRefreshed() {
     this.refreshHandler.call();
@@ -46,5 +42,6 @@ export abstract class AbstractScreenPlugin implements IScreenPlugin {
   initialize(xmlAttributes: { [key: string]: string }): void {
     this.initialized = true;
   }
-}
 
+  getScreenParameters: (() => { [p: string]: string }) | undefined;
+}
