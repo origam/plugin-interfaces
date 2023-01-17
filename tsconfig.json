@@ -37,7 +37,7 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "baseUrl": "."
   },
-  "include": ["src"],
   "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
 }
