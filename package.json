@@ -10,11 +10,11 @@
     "src/components/Dropdown/Dropdown.module.scss"
   ],
   "devDependencies": {
-    "@types/react": "^17.0.34",
+    "@types/react": "^18.0.26",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "postcss": "^8.4.5",
-    "resolve": "^1.20.0",
+    "resolve": "^1.22.1",
     "rollup": "^3.10.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
