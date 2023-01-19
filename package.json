@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "@origam/utils": "^1.1.1",
-    "mobx": "5"
+    "mobx": "6"
   }
 }
